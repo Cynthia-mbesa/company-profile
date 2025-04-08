@@ -1,14 +1,191 @@
+/* Reset & General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', 'sans-serif';
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
-    background: linear-gradient(to bottom, #0a1323, #005a66);
+    background: linear-gradient(to bottom, #0a0a23, #003366); /* Dark gradient */
     color: white;
     text-align: center;
 }
 
+/* ===== Navigation Bar ===== */
+nav {
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.hero a {
+    display: inline-block;
+    background: #ffcc00;
+    color: #333;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+.hero a:hover {
+    background: #ffa500;
+}
+
+/* ===== Wavy Sections ===== */
+.wave-container {
+    position: relative;
+    background: #fff;
+    color: #333;
+    padding: 80px 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    width: 90%;
+}
+
+.wave-container::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: url('https://www.heropatterns.com/img/wave.svg') repeat-x;
+}
+
+.wave-container::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: url('https://www.heropatterns.com/img/wave.svg') repeat-x;
+}
+
+/* ===== Hover Effect for Sections ===== */
+.wave-container:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+/* ===== Services Section Styling ===== */
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* ===== Testimonials Section Styling ===== */
+.testimonials {
+    font-style: italic;
+}
+
+/* ===== Contact Section ===== */
+#contact {
+  padding: 50px;
+  background-color: linear-gradient(to bottom, #0a0a23, #003366); /* Dark gradient */
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact label {
+  margin-bottom: 5px;
+}
+
+#contact input, #contact textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#contact button {
+  padding: 10px;
+  background-color: #4facfe;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: #00f2fe;
+}
+
+/* ===== Footer ===== */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ffa500;
+}
