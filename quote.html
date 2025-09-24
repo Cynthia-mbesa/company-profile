@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Get Quote — Wangenja Edu-Consult</title>
+  <meta name="description" content="Select services and request a quote. Choose services and send your selection as an email." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <nav class="nav" role="navigation" aria-label="Quote navigation">
+      <div class="nav-left">
+        <img src="edu-consult-logo.png" alt="Wangenja Edu-Consult logo" class="logo" />
+        <span class="brand">Wangenja Edu-Consult</span>
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container section" id="quotePage" aria-labelledby="quote-heading">
+    <h1 id="quote-heading">Request a Quote</h1>
+    <p>Select the services you want below. You can send your selection to us via email.</p>
+
+    <form id="quoteForm" class="quote-form" aria-describedby="quote-help">
+      <p id="quote-help" class="sr-only">Choose one or more services. Total updates automatically.</p>
+
+      <fieldset>
+        <legend class="sr-only">Services</legend>
+
+        <!-- NOTE: prices are example values in KES. Edit as needed. -->
+        <label class="service-item"><input type="checkbox" data-name="Revision Materials" data-price="2000" /> Revision Materials — KES 2,000</label>
+        <label class="service-item"><input type="checkbox" data-name="Computer Installation" data-price="5000" /> Computer Installation — KES 5,000</label>
+        <label class="service-item"><input type="checkbox" data-name="Career & Motivation talks" data-price="3500" /> Career & Motivation talks — KES 3,500</label>
+        <label class="service-item"><input type="checkbox" data-name="Career Counseling" data-price="2500" /> Career Counseling — KES 2,500</label>
+        <label class="service-item"><input type="checkbox" data-name="On-site Training" data-price="7000" /> On-site Training — KES 7,000</label>
+      </fieldset>
+
+      <div class="summary" aria-live="polite" aria-atomic="true">
+        <h2>Quote Summary</h2>
+        <ul id="selectedServices"></ul>
+        <p><strong>Total: KES <span id="quoteTotal">0</span></strong></p>
+      </div>
+
+      <label for="clientEmail">Your email (so we can reply)</label>
+      <input id="clientEmail" type="email" placeholder="you@example.com" required />
+
+      <label for="clientName">Your name (optional)</label>
+      <input id="clientName" type="text" placeholder="Full name" />
+
+      <div class="form-actions">
+        <button type="button" id="copyQuote" class="btn-outline">Copy Quote</button>
+        <button type="button" id="mailtoSend" class="btn-primary">Send Quote via Email</button>
+      </div>
+    </form>
+  </main>
+
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer" role="contentinfo"><div class="container"><p>&copy; 2025 Wangenja Edu-Consult & Logistics Ltd.</p></div></footer>
+
+  <script src="quote.js" defer></script>
+</body>
+</html>
