@@ -216,6 +216,38 @@ nav ul li a:hover {
   background-color: #00f2fe;
 }
 
+/* ===== Quote Form Styling ===== */
+form label {
+  display: block;
+  margin: 0.75rem 0 0.25rem; /* space above and below */
+  font-weight: 600; /* make labels stand out */
+  text-align: left; /* keep labels aligned to the left */
+}
+
+form input {
+  display: block;
+  width: 100%; /* full width */
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 1rem; /* space between fields */
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.form-actions button {
+  flex: 1; /* make buttons equal width */
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
 /* ===== Footer ===== */
 footer {
     background: rgba(0, 0, 0, 0.8);

@@ -28,15 +28,89 @@
       <p id="quote-help" class="sr-only">Choose one or more services. Total updates automatically.</p>
 
       <fieldset>
-        <legend class="sr-only">Services</legend>
+  <legend class="sr-only">Services</legend>
 
-        <!-- NOTE: prices are example values in KES. Edit as needed. -->
-        <label class="service-item"><input type="checkbox" data-name="Revision Materials" data-price="2000" /> Revision Materials — KES 2,000</label>
-        <label class="service-item"><input type="checkbox" data-name="Computer Installation" data-price="5000" /> Computer Installation — KES 5,000</label>
-        <label class="service-item"><input type="checkbox" data-name="Career & Motivation talks" data-price="3500" /> Career & Motivation talks — KES 3,500</label>
-        <label class="service-item"><input type="checkbox" data-name="Career Counseling" data-price="2500" /> Career Counseling — KES 2,500</label>
-        <label class="service-item"><input type="checkbox" data-name="On-site Training" data-price="7000" /> On-site Training — KES 7,000</label>
-      </fieldset>
+  <ul class="service-list">
+
+    <!-- Revision Materials -->
+    <li>
+      <strong>Revision Materials</strong>
+      <ul>
+        <li>
+          <label>
+            <input type="checkbox" data-name="Maths Revision Pack" data-price="1500" />
+            Maths Revision Pack — KES 1,500
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" data-name="Science Revision Pack" data-price="1800" />
+            Science Revision Pack — KES 1,800
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" data-name="English Revision Pack" data-price="1200" />
+            English Revision Pack — KES 1,200
+          </label>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Stationery -->
+    <li>
+      <strong>Stationery</strong>
+      <ul>
+        <li>
+          <label>
+            <input type="checkbox" data-name="Pens" data-price="50" />
+            Pens — KES 50 each
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" data-name="Books" data-price="100" />
+            Books — KES 100 each
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" data-name="Geometry Set" data-price="250" />
+            Geometry Set — KES 250
+          </label>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Other Services -->
+    <li>
+      <label>
+        <input type="checkbox" data-name="Computer Installation" data-price="5000" />
+        Computer Installation — KES 5,000
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" data-name="Career & Motivation Talks" data-price="3500" />
+        Career & Motivation Talks — KES 3,500
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" data-name="Career Counseling" data-price="2500" />
+        Career Counseling — KES 2,500
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" data-name="On-site Training" data-price="7000" />
+        On-site Training — KES 7,000
+      </label>
+    </li>
+
+  </ul>
+</fieldset>
+
 
       <div class="summary" aria-live="polite" aria-atomic="true">
         <h2>Quote Summary</h2>
